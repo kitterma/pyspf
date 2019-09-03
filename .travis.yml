@@ -1,5 +1,6 @@
 language: python
 python:
+  - "2.7"
   - "3.4"
   - "3.5"
   - "3.6"      # current default Python on Travis CI
@@ -9,9 +10,9 @@ python:
   - "nightly"  # nightly build
 # command to install dependencies
 install:
-  - pip install Py3DNS authres PyYAML
-  - python3 setup.py install
+  - pip install PyYAML
+  - python setup.py install
 # command to run tests
 script:
-  - cd test; python3 testspf.py
+  - cd test; python testspf.py
 
