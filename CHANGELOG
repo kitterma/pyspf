@@ -1,5 +1,7 @@
 Version 2.0.14
   * Fix doctest for CNAME fixes to work with python and python3
+  * Switch from distutils to setuptools and add install_requires for both
+    python and python3 to simplify installation via pip
 
 Version 2.0.13 - September 2, 2019
   * Catch ValueError due to improper IP address in connect IP or in ip4/ip6

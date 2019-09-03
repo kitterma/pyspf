@@ -1,14 +1,19 @@
 #!/usr/bin/python
 
-from distutils.core import setup
+from setuptools import setup
 import sys
 
 DESC = """SPF (Sender Policy Framework) implemented in Python."""
 with open("README.md", "r") as fh:
     LONG_DESC = fh.read()
 
+if sys.version_info[0] == 2:
+    install_req = ['PyDNS', 'authres', 'ipaddr']
+else:
+    install_req = ['Py3DNS', 'authres']
+
 setup(name='pyspf',
-      version='2.0.13',
+      version='2.0.14',
       description=DESC,
       long_description=LONG_DESC,
       long_description_content_type="text/markdown",
@@ -21,6 +26,9 @@ setup(name='pyspf',
       py_modules=['spf'],
       keywords = ['spf','email','forgery'],
       scripts = ['type99.py','spfquery.py'],
+      include_package_data=True,
+      zip_safe = False,
+      install_requires=install_req,
       classifiers = [
 	'Development Status :: 5 - Production/Stable',
 	'Environment :: No Input/Output (Daemon)',
