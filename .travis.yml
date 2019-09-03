@@ -10,6 +10,7 @@ python:
 # command to install dependencies
 install:
   - pip install Py3DNS authres
+  - python3 setup.py install
 # command to run tests
 script:
   - cd test; python3 testspf.py
