@@ -9,7 +9,7 @@ python:
   - "nightly"  # nightly build
 # command to install dependencies
 install:
-  - pip install DNS authres
+  - pip install Py3DNS authres
 # command to run tests
 script:
   - cd test; python3 testspf.py
