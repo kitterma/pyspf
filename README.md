@@ -193,3 +193,7 @@ Scott Kitterman scott@kitterman.com
 http://cheeseshop.python.org/pypi/pyspf
 
 Code is currently hosted at https://github.com/sdgathman/pyspf/
+
+Travis CI Status
+----------------
+[![Build Status](https://travis-ci.com/kitterma/pyspf.svg?branch=pyspf-2_0-branch)](https://travis-ci.com/kitterma/pyspf)
