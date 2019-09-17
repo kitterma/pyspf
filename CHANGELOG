@@ -4,6 +4,7 @@ Version 2.0.14
     python and python3 to simplify installation via pip
   * Fix dnspython integration so that SPF TempError is properly raised when
     there are timeout or no nameserver errors
+  * Restore DNSLookup API for pydnsv(DNS) for tcp fallback works again
 
 Version 2.0.13 - September 2, 2019
   * Add support for use of dnspython (dns) if installed
